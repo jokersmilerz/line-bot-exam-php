@@ -57,6 +57,7 @@
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "22"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $a=array("red","green","blue","yellow","brown");
         $random_keys=array_rand($a,3);
         echo $a[$random_keys[0]]."<br>";
