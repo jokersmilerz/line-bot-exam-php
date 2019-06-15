@@ -56,6 +56,14 @@
         $arrayPostData['messages'][1]['stickerId'] = "131";
         replyMsg($arrayHeader,$arrayPostData);
     }
+    else if($message == "22"){
+        $a=array("red","green","blue","yellow","brown");
+        $random_keys=array_rand($a,3);
+        echo $a[$random_keys[0]]."<br>";
+        echo $a[$random_keys[1]]."<br>";
+        echo $a[$random_keys[2]];
+    }
+
 function replyMsg($arrayHeader,$arrayPostData){
         $strUrl = "https://api.line.me/v2/bot/message/reply";
         $ch = curl_init();
