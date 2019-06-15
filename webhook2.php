@@ -15,6 +15,8 @@
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
+        $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาาบบบ";
+        $arrayPostData['messages'][0]['text'] = "สวัสดีครับ";
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Sticker"
